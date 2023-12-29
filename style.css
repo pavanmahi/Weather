@@ -104,9 +104,12 @@ body{
     {
         display: block;
         z-index: 1;
+        color: azure;
+        padding-bottom: 20px;
     }
     .p{
         min-height:40%;
         min-width:80% ;
+        margin-top:15px;
     }
   }

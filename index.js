@@ -19,7 +19,7 @@ const city=document.getElementsByClassName("city")[0];
 return (far-273).toFixed(3);
 }
 
-fetch(https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=4810e142098401e123eed7a66306dcba).then(res=>res.json()).then(data=>{
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=4810e142098401e123eed7a66306dcba`).then(res=>res.json()).then(data=>{
     console.log(data);
   function  conversion(far)
 {
@@ -39,11 +39,11 @@ return (far-273).toFixed(3);
     const des=data.weather[0].description;
 
 
-    city1.innerHTML=Weather of &nbsp;<span> ${name}<span>
-    temp1.innerHTML=Temperature &nbsp;<span> ${ conversion(temp) } C<span>;
-    pres1.innerHTML=Pressure is &nbsp;<span> ${  pressure } <span>;
-    desc1.innerHTML=Sky conditions &nbsp;<span class="hello1">${des}<span>
-    speed1.innerHTML=Wind Speed &nbsp;<span> ${speed} km/hr<span>
+    city1.innerHTML=`Weather of &nbsp;<span> ${name}<span>`
+    temp1.innerHTML=`Temperature&nbsp;<span> ${ conversion(temp) } C<span>`;
+    pres1.innerHTML=`Pressure &nbsp;<span> ${  pressure } <span>`;
+    desc1.innerHTML=`Sky conditions &nbsp;<span class="hello1">${des}<span>`
+    speed1.innerHTML=`Wind Speed &nbsp;<span> ${speed} km/hr<span>`
 
 
 

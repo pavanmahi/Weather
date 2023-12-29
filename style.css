@@ -1,0 +1,70 @@
+body{
+    background-image: url(th.jpeg);
+    min-height: 100vh;
+    background-repeat: none;
+    background-size: cover;
+    overflow: hidden;
+    
+  }
+  .input{
+      position: absolute;
+      top:30%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-color:pink;
+    height: 25%;
+    width: 35%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  input{
+      flex: 1;
+      margin: 5px;
+      padding: 8px;
+      width: 30%;
+  }
+  button{
+      padding: 8px;
+      width: 12%;    
+  }
+  .button:hover{
+      background-color: aqua;
+  }
+  .p{
+      display: none;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      height: 35%;
+      width: 40%;
+      
+  
+      background-color: rgb(189, 157, 239);    
+  }
+  p{
+      padding: 7px;
+      display: flex;
+      flex-direction: row;
+  }
+  .city{
+      text-align: center;
+  }
+  span{
+      color: blue;
+  }
+  h3{
+      width: 100%;
+  }
+  .menuimage{
+      height: 50px;
+      width: 50px;
+      border-radius: 75%;
+  }
+  .menu{
+      display: none;
+  }.m1{
+      display: block;
+  }

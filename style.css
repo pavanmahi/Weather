@@ -6,12 +6,11 @@ body{
     overflow: hidden;
     
   }
- .h1
+  .h1
   {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index:1;
   }
   .input::before{
     content: "";
@@ -48,15 +47,30 @@ body{
       padding: 8px;
       max-width:70%;
       z-index: 1;
+      font-size: 18px;
+      border-radius: 20px;
+      background: transparent;
+  }
+  input:hover
+  {
+    box-shadow: 0px 4px 15px rgb(19, 18, 18);
+  }
+  input::placeholder
+  {
+    color: black;
   }
   button{
       padding: 8px;
      min-width: fit-content;
       flex-wrap: wrap;
       z-index: 1;    
+      border-radius: 15px;
+      background-color: rgb(106, 4, 74);
+      color: aliceblue;
   }
   .button:hover{
       background-color: aqua;
+      color: black;
   }
   .p{
       display: none;
@@ -94,11 +108,15 @@ body{
     input {
        max-height: 10%;
        width: 20vw; 
-       background-color:rgb(215, 205, 192);
-    }
-    input::placeholder
-    {
-        visibility: hidden;
+       background-color:rgba(178, 192, 178, 0.379);
+        font-size: xx-small;
+        /* background: transparent; */
+     }
+    
+    .input1::before {
+        content: "City"; 
+        color: #e30909;
+        font-size: 14px; 
     }
     .h2
     {
@@ -110,6 +128,10 @@ body{
     .p{
         min-height:40%;
         min-width:80% ;
-        margin-top:15px;
+    }
+    .button
+    {
+        margin-top: 15px;
     }
   }
+  

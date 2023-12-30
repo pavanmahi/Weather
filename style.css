@@ -110,14 +110,7 @@ body{
        width: 20vw; 
        background-color:rgba(178, 192, 178, 0.379);
         font-size: xx-small;
-        /* background: transparent; */
      }
-    
-    .input1::before {
-        content: "City"; 
-        color: #e30909;
-        font-size: 14px; 
-    }
     .h2
     {
         display: block;
